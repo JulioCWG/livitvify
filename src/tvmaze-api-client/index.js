@@ -5,8 +5,8 @@
 
  export function getShows(fn){
    $.ajax('http://api.tvmaze.com/shows',{
-     succes: function (data, textStatus, xhr){
-       fn(data);
+     succes: function (shows, textStatus, xhr){
+       fn(shows);
      }
    });
 
